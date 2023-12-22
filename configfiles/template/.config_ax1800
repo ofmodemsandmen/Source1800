@@ -6110,7 +6110,7 @@ CONFIG_PACKAGE_uclient-fetch=y
 # Router Specific
 #
 # CONFIG_PACKAGE_alix2d13 is not set
-# CONFIG_PACKAGE_axt1800 is not set
+CONFIG_PACKAGE_axt1800=y
 # CONFIG_PACKAGE_b1300 is not set
 # CONFIG_PACKAGE_d240 is not set
 # CONFIG_PACKAGE_dir860l is not set
