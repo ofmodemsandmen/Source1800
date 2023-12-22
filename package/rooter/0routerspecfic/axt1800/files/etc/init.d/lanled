@@ -1,0 +1,26 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2013 OpenWrt.org
+
+START=70
+USE_PROCD=1
+
+log() {
+	logger -t "exportgpio" "$@"
+}
+
+start_service()
+{
+	lan=$(uci -q get network.lan.name)
+	if [ -z "$lan" ]; then
+		uci set network.lan='led'
+		uci set network.lan.sysfs='blue:system'
+		uci set network.lan.trigger='netdev'
+		uci set network.lan.dev='br-lan'
+		uci set network.lan.name='lan'
+		uci add_list network.mode='link'
+		uci add_list network.mode='tx'
+		uci add_list network.mode='rx'
+		uci commit system
+		/etc/init.d/led restart
+	fi
+}
