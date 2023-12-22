@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/packages/cligen/Makefile
+
+Package: cligen
+Version: 6.5.0-2
+Depends: +libc libxml2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: packages
+Title: CLIgen is a Command-Line Interface generator
+Maintainer: Olof Hagsand <olof@hagsand.se>, Philip Prindeville <philipp@redfish-solutions.com>
+Source: cligen-6.5.0.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:   CLIgen provides dynamic CLI interpretation from grammar files
+  handled at run-time.
+https://www.cligen.se
+Olof Hagsand <olof@hagsand.se>, Philip Prindeville <philipp@redfish-solutions.com>
+@@
+
+

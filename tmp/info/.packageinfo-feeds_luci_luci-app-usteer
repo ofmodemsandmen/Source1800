@@ -1,0 +1,42 @@
+Source-Makefile: package/feeds/luci/luci-app-usteer/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-usteer
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-base +usteer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: LuCI usteer app for js based luci
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI usteer app for js based luci
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-usteer-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc luci-app-usteer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: luci
+Title: luci-app-usteer - es translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-usteer - Español (Spanish)
+
+@@
+
+

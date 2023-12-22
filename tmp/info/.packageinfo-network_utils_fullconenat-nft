@@ -1,0 +1,23 @@
+Source-Makefile: package/network/utils/fullconenat-nft/Makefile
+
+Package: kmod-nft-fullcone
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>+2023-01-10-95ad79bc6d15c64b2770fe8b7092a64d5c2a293c-1
+Depends: +kmod-nft-nat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: nftables fullcone expression support
+Maintainer: Syrone Wong <wong.syrone@gmail.com>
+Source: fullconenat-nft-2023-01-10-95ad79bc6d15c64b2770fe8b7092a64d5c2a293c.tar.xz
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NF_CONNTRACK_CHAIN_EVENTS=n
+Description: nftables fullcone expression support
+Syrone Wong <wong.syrone@gmail.com>
+@@
+
+

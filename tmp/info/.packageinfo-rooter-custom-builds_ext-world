@@ -1,0 +1,20 @@
+Source-Makefile: package/rooter-custom-builds/ext-world/Makefile
+
+Package: ext-world
+Version: 1.000-1
+Depends: +libc +luci +ext-rooter-basic +build-admin +ext-gps +luci-app-ddns +ddns-scripts +pingtest +ext-netselect +extramenu +ext-blockport +ext-domain +ext-blacklist +luci-app-rootervpn +ext-wireguard +bwmon +464xlat +webconsole +ext-basicmenu +ext-theme +luci-theme-argon +ext-login +ca-bundle +ca-certificates +arc-storage +luci-app-sqm +kmod-sched-cake +luci-app-nft-qos +ext-command +ext-speedtest +openvpn-easy-rsa +openvpn-openssl +ext-extra +luci-app-hotspot +luci-app-guestwifi +usbmuxd +libusbmuxd-utils +libimobiledevice-utils +kmod-usb-net-ipheth ++luci-ssl +usbutils +openssl-util +irqbalance +wget +luci-app-vpnbypass +coreutils-base64 +ext-selectisp +ext-wizard +ext-ota +world-zerotier
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: ROOter
+Repository: base
+Title: ROOter support for World routers
+Maintainer: Created by DM/makefile by Cobia@whirlpool
+Source: 
+Type: ipkg
+Description:   Helper scripts to enable support for World routers
+Created by DM/makefile by Cobia@whirlpool
+@@
+
+

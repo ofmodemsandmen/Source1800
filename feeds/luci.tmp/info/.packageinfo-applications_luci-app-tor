@@ -1,0 +1,42 @@
+Source-Makefile: feeds/luci/applications/luci-app-tor/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-tor
+Submenu: 3. Applications
+Version: 1.0.0
+Depends: +libc +luci-base +tor +tor-hs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI app to configure Tor
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI app to configure Tor
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-tor-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-tor
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-tor - ru translation
+Maintainer: Sergey Ponomarev <stokito@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-tor - Русский (Russian)
+Sergey Ponomarev <stokito@gmail.com>
+@@
+
+
