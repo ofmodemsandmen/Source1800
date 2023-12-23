@@ -9,7 +9,8 @@
 		"imagepath": "/qualcommax/ipq60xx/",
 		"mod": "GL-iNet-AXT1800",
 		"ext1": "-upgrade.bin",
-		"ext2": "-factory.ubi"
+		"ext2": "-factory.ubi",
+		"addons": ["axt1800.txt"]
 	},
 	"AX1800": {
 		"details": "Gl.iNet AX1800",
@@ -21,6 +22,20 @@
 		"imagepath": "/qualcommax/ipq60xx/",
 		"mod": "GL-iNet-AX1800",
 		"ext1": "-upgrade.bin",
-		"ext2": "-factory.ubi"
+		"ext2": "-factory.ubi",
+		"addons": ["axt1800.txt"]
+	},
+	"AW1000": {
+		"details": "Arcadyan AW1000",
+		"type": "2",
+		"build": "2305",
+		"config": ".config_aw1000",
+		"image1": "openwrt-qualcommax-ipq807x-arcadyan_aw1000-squashfs-sysupgrade.bin",	
+		"image2": "openwrt-qualcommax-ipq807x-arcadyan_aw1000-squashfs-factory.ubi",
+		"imagepath": "/qualcommax/ipq807x/",
+		"mod": "Arcadyan-AW1000",
+		"ext1": "-upgrade.bin",
+		"ext2": "-factory.ubi",
+		"addons": ["readme.pdf"]
 	}
 }
