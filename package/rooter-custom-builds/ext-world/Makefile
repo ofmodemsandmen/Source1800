@@ -26,7 +26,7 @@ define Package/ext-world
 		+openvpn-easy-rsa +openvpn-openssl \
 		+ext-extra +luci-app-hotspot +luci-app-guestwifi \
 		+usbmuxd +libusbmuxd-utils +libimobiledevice-utils +kmod-usb-net-ipheth \
-		++luci-ssl +usbutils +openssl-util +irqbalance \
+		++luci-ssl +usbutils +openssl-util +ethtool \
 		+wget +luci-app-vpnbypass +coreutils-base64 \
 		+ext-selectisp +ext-wizard +ext-ota +world-zerotier
   TITLE:=ROOter support for World routers
